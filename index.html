@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriançaEsperança</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <header id="cabeça">
+        <h1><p>Praticando...</p></h1>
+        <h3><p>Doação</p></h3>
+   </header> 
+   <section id="corpo">
+       <article id="entrada">
+            <p><h1>CRIANÇA ESPERANÇA</h1></p>
+            <p><h4>Muito Obrigado Por Ajudar</h4></p>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th id="titulodoa" colspan="2"><strong><u>DOAÇÕES</u></strong></th>
+                    </tr>
+                    <tr>
+                        <th>DIGITE</th>
+                        <th>PARA DOAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td">[1]</td>
+                        <td>R$10</td>
+                    </tr>
+                    <tr>
+                        <td class="td">[2]</td>
+                        <td>R$25</td>
+                    </tr>
+                    <tr>
+                        <td class="td">[3]</td>
+                        <td>R$50</td>
+                    </tr>
+                    <tr>
+                        <td class="td">[4]</td>
+                        <td>Outros Valores</td>
+                    </tr>
+                    <tr>
+                        <td class="td">[5]</td>
+                        <td>Cancelar</td>
+                    </tr>
+                </tbody>
+            </table>
+       </article>
+       <article id="meio">
+           <label>Digite: </label>
+            <input type="number" id="numero" min="1" max="5" value="1">
+            <input type="button" value="Enviar" onclick="digitar()" >
+             
+       </article>
+       <article id="saida">
+            <p>Esperando...</p>
+       </article>
+       <article id="debaixo">
+        <label >Outra Alternativa R$</label>
+        <input id="alt" type="number" min="1">
+        <input type="button" value="Mandar" onclick="digitar()">
+       </article>
+       <article id="saidan">
+            <p>.</p>
+       </article>
+   </section>
+    <script src="script.js"></script>
+</body>
+</html>
