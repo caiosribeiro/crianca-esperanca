@@ -1,14 +1,7 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     text-align: center;
     background-color: cornflowerblue;
     background-image: url(imagens/crianca_esperanca.png);
-    min-height: 1200px;
     margin-top: 10%;
 }
 
@@ -34,9 +27,11 @@ body{
     text-decoration: underline;
     position: relative;
     top: 15%;
-    text-align: center;
 }
+
 #corpo{
+    position: relative;
+    right: 2.5%;
     width: 50%;
     height: 400px;
     border-radius: 70px;
@@ -49,11 +44,13 @@ body{
     background-size: 100% 100%;
     background-position: center;
     background-color: rgba(17, 90, 226, 0.5);
-    
 }
+
 #entrada{
     margin: auto -10px auto auto;
     padding: 50px;
+    position: relative;
+    right: 2%;
 }
 
 table,td,th{
@@ -63,22 +60,27 @@ table,td,th{
     text-align: center;
     padding: 5px;
 }
+
 #titulodoa{
     background-color: seagreen;
     color: black;
 }
+
 th{
     background-color: slategrey;
     color: black;
 }
+
 .td{
     background-color: slategrey;
     color: black;
 }
+
 td{
     background-color: cornflowerblue;
     color: darkblue;
 }
+
 #entrada h1{
     font-size: 30px;
     color: darkblue;
@@ -87,6 +89,7 @@ td{
 #entrada h4{
     color: darkblue;
 }
+
 #meio{
     float: center;
     position: relative;
@@ -101,9 +104,11 @@ td{
     text-align: center;
     font: 30px;
 }
+
 label{
     font-size: 30px;
 }
+
 #saida{
     float: center;
     position: relative;
@@ -112,10 +117,12 @@ label{
     font-size: 30px;
     width: 50%;
 }
+
 #alt{
     width: 50px;
     float: center;
 }
+
 #debaixo{
     opacity: 0;
     float: right;
@@ -123,9 +130,11 @@ label{
     right: 5%;
     bottom: 60%;
 }
+
 #debaixo label{
     font-size: 15px;
 }
+
 button{
     outline: none;
     background-color: darkgray;
@@ -138,8 +147,6 @@ button{
     width: 50%;
 }
 
-
-
 @media only screen and (max-width:1257px){
     #cabeca{
         width: 40%;
@@ -151,10 +158,6 @@ button{
 }
 
 @media only screen and (max-width: 916px){
-
-    body{
-        margin-top: -4%;
-    }
 
     #cabeca{
         width: 50%;
@@ -278,4 +281,35 @@ button{
         bottom: 50%;
     }
 
+}
+
+@media only screen and (max-width: 352px){
+    #meio label, #saida p{
+        font-size: 20px;
+    }
+
+    #meio{
+        position: relative;
+        left: 50%;
+    }
+
+    #saida{
+        position: relative;
+        left: 60%;
+    }
+
+    #tabela{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    #tabela{
+        font-size: 10px;
+    }
+
+    #meio label{
+        position: relative;
+        bottom: 40%;
+    }
 }
