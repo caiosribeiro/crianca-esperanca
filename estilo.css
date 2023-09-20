@@ -3,6 +3,7 @@ body{
     background-color: cornflowerblue;
     background-image: url(imagens/crianca_esperanca.png);
     margin-top: 10%;
+    overflow-x: hidden;
 }
 
 #cabeca{
